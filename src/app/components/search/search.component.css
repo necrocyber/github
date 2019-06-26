@@ -1,0 +1,51 @@
+.center-content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  text-align: center;
+  width: 70%;
+}
+
+.title {
+  word-spacing: 10px;
+  font-size: 3.5rem;
+  padding-bottom: 10px;
+}
+
+label:nth-child(1) {
+  font-weight: bold;
+}
+
+.search-box {
+  display: flex;
+  width: 100%;
+}
+
+input {
+  border: 1px solid #999999;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  padding: .675rem .85rem;
+  margin-right: -1px;
+  flex: 1 1 auto;
+  width: 1%;
+  font-size: 1rem;
+}
+
+.badge {
+  display: block;
+  background: #AC53F2;
+  padding: .675rem .85rem;
+  border: 1px solid #999999;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 2.0rem;
+  }
+}
