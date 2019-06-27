@@ -4,9 +4,10 @@
     Search
   </div>
   <div class="search-box">
-    <input type="text">
-    <span class="badge">
+    <input [(ngModel)]="user" type="text">
+    <span (click)="searchUser(user)" class="badge">
       <fa-icon style="color: white" [icon]="faSearch"></fa-icon>
     </span>
   </div>
+  <span #error class="error">Debe ingresar un usuario válido</span>
 </div>

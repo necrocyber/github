@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-detail',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DetailComponent implements OnInit {
 
-  constructor() { }
+  constructor(private route: Router) { }
 
   ngOnInit() {
+    this.loadDetail();
+  }
+
+  loadDetail() {
+    const { state, data } = this.route.routerState.snapshot.root.queryParams;
   }
 
 }

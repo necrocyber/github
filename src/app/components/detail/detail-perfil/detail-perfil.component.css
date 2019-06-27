@@ -1,0 +1,8 @@
+.perfil {
+  width: 30%;
+  margin-top: 20px;
+  height: 100%;
+  margin-left: 5%;
+  border: solid 1px #555555;
+  display: inline-block;
+}
