@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-detail',
@@ -8,14 +9,19 @@ import { Router } from '@angular/router';
 })
 export class DetailComponent implements OnInit {
 
-  constructor(private route: Router) { }
+  faSearch = faSearch;
+  user: string;
+
+  constructor(
+    private activatedRoute: ActivatedRoute,
+    ) { }
 
   ngOnInit() {
     this.loadDetail();
   }
 
   loadDetail() {
-    const { state, data } = this.route.routerState.snapshot.root.queryParams;
+    this.user = this.activatedRoute.snapshot.paramMap.get('user');
   }
 
 }

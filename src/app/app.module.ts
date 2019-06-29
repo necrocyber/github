@@ -18,7 +18,7 @@ import { DetailRepositoryComponent } from './components/detail/detail-repository
 
 const routeApp: Routes = [
   { path: '', component: SearchComponent, pathMatch: 'full' },
-  { path: 'detail', component: DetailComponent },
+  { path: 'detail/:user', component: DetailComponent },
   { path: 'notfound', component: ErrorComponent }
 ];
 

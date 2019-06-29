@@ -1,3 +1,11 @@
 <div class="repository">
-  REPOSITORY
+ <ul>
+   <li *ngFor="let repo of repos">
+     <div class="row-repo">
+      <label class="title"> {{ repo.name }} </label>
+      <label class="description"> {{ repo.description }} </label>
+      <fa-icon style="color: grey" [icon]="faStar"></fa-icon><span> {{ repo.stargazers_count }} </span>
+    </div>
+  </li>
+ </ul>
 </div>

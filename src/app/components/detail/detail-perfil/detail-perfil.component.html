@@ -1,3 +1,12 @@
-<div class="perfil">
-  PERFIL
+<div class="perfil-user">
+  <div class="avatar">
+    <img src="{{userPerfil.avatar_url}}" alt="">
+  </div>
+  <label class="login"> {{ userPerfil.login }} </label>
+  <label class="name"> {{ userPerfil.name }} </label>
+  <ul>
+    <li><fa-icon style="color: grey" [icon]="faMapMarked"></fa-icon><span>{{ userPerfil.location }}</span></li>
+    <li><fa-icon style="color: grey" [icon]="faBox"></fa-icon><span>{{ userPerfil.public_repos }}</span></li>
+    <li><fa-icon style="color: grey" [icon]="faUsers"></fa-icon><span>{{ userPerfil.followers }}</span></li>
+  </ul>
 </div>

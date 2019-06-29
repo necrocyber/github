@@ -1,6 +1,19 @@
-<div class="header">
+<div class="container">
+  <div class="header">
+    <div class="title">
+      <label>Github</label>
+      Search
+    </div>
+    <div class="search-box">
+      <input [(ngModel)]="user" type="text">
+      <span (click)="searchUser(user)" class="badge">
+        <fa-icon style="color: white" [icon]="faSearch"></fa-icon>
+      </span>
+    </div>
+  </div>
 
+  <app-detail-perfil [dataPerfil]="user"></app-detail-perfil>
+  <app-detail-repository [repoPerfil]="user"></app-detail-repository>
 </div>
-<app-detail-perfil></app-detail-perfil>
-<app-detail-repository></app-detail-repository>
+
 

@@ -1,7 +1,58 @@
+.container {
+  width: 60%;
+  margin: 0 auto;
+}
+
 .header {
-  border: solid 1px #555555;
   height: 100px;
-  width: 90%;
+  width: 100%;
   margin-top: 20px;
-  margin-left: 5%;
+  display: inline-block;
+}
+
+.title {
+  word-spacing: 5px;
+  font-size: 1.5rem;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  height: 100px;
+  float: left;
+  width: 30%;
+}
+
+.search-box {
+  display: flex;
+  width: 50%;
+  margin-left: 1%;
+  height: 100px;
+  align-items: center;
+  float: right;
+}
+
+input {
+  border: 1px solid #999999;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  padding: .475rem .85rem;
+  margin-right: -1px;
+  flex: 1 1 auto;
+  width: 1%;
+  font-size: 1rem;
+}
+
+.badge {
+  display: block;
+  background: #AC53F2;
+  padding: .475rem .85rem;
+  border: 1px solid #999999;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  cursor: pointer;
+}
+
+label:nth-child(1) {
+  font-weight: bold;
+  margin-right: 10px;
+  font-size: 2.5rem;
 }
